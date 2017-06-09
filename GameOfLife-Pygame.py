@@ -73,9 +73,9 @@ def print_py_game():
     for x in xrange(len(board)):
         for y in xrange(len(board[0])):
             if board[x][y] == 1:
-                drawCell(x * 8, y * 8)
+                draw_cell(x * 8, y * 8)
             else:
-                drawBoard(x * 8, y * 8)
+                draw_board(x * 8, y * 8)
 
 
 def check(x, y):
@@ -202,7 +202,7 @@ while running:
         for x in xrange(len(board)):
             for y in xrange(len(board[0])):
                 gerate(x, y)
-    printPyGame()
+    print_py_game()
     pygame.display.update()
 pygame.quit()
 sys.exit()
